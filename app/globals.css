@@ -1002,3 +1002,43 @@ button {
     padding: 0 1rem;
   }
 }
+
+/* Correção do banner principal: usa a imagem /public/images/banner-home.png */
+.hero-home-banner-stage {
+  min-height: clamp(24rem, 52vw, 44rem);
+  background: #11100e;
+}
+
+.hero-home-banner-stage::before,
+.hero-home-banner-stage::after {
+  display: none;
+}
+
+.hero-home-banner-image {
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.05) contrast(1.04);
+}
+
+.hero-home-banner-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(17, 16, 14, 0.62), rgba(17, 16, 14, 0.12) 48%, rgba(17, 16, 14, 0.28));
+  pointer-events: none;
+}
+
+.hero-home-banner-stage .hero-campaign-caption {
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (max-width: 760px) {
+  .hero-home-banner-stage {
+    min-height: 25rem;
+  }
+
+  .hero-home-banner-image {
+    object-position: 58% center;
+  }
+}

@@ -488,15 +488,16 @@ function productBadge(product) {
 
 function EditorialHeroCampaign() {
   return (
-    <div className="hero-campaign-stage">
-      <div className="hero-campaign-main">
-        <ProductImage
-          src="/produtos/vestido-rosa-capuz/frente.png"
-          alt="Cachorro usando vestido rosa com capuz"
-          priority
-          sizes="(max-width: 640px) 94vw, 72vw"
-        />
-      </div>
+    <div className="hero-campaign-stage hero-home-banner-stage">
+      <Image
+        src="/images/banner-home.png"
+        alt="Cachorros usando roupinhas premium da Tukinho Pet Store"
+        fill
+        priority
+        className="hero-home-banner-image"
+        sizes="100vw"
+      />
+      <div className="hero-home-banner-shade" />
       <p className="hero-campaign-caption">Campaign 2026</p>
     </div>
   );
