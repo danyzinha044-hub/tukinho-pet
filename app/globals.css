@@ -1003,7 +1003,7 @@ button {
   }
 }
 
-/* Correção do banner principal: usa a imagem /public/images/banner-home.png */
+/* Correção do banner principal: usa a imagem /images/banner-home.png */
 .hero-home-banner-stage {
   min-height: clamp(24rem, 52vw, 44rem);
   background: #11100e;
